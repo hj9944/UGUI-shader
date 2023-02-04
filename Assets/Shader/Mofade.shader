@@ -109,17 +109,13 @@ Shader "Unlit/Mofade"
                 float cutout = tex2D(_Ramp, noiseUV).r;
                 fixed4 col = (tex2D(_MainTex, i.texcoord.xy) + _TextureSampleAdd) * i.color;
 
-                // #ifdef UNITY_UI_CLIP_RECT
-                // col.a *= UnityGet2DClipping(i.worldPosition.xy, _ClipRect);
-                // #endif
+                #ifdef UNITY_UI_CLIP_RECT
+                col.a *= UnityGet2DClipping(i.worldPosition.xy, _ClipRect);
+                #endif
 
                 #ifdef UNITY_UI_ALPHACLIP
                 clip (min(col.a - 0.5, 0.6));
                 #endif
-
-                // half4 temp = fixed4(tex2D(_Ramp, noiseUV).rgb, 1);
-                //
-                // col.rgb += temp.rgb * temp.a;
 
                 col.a *= smoothstep(0, 0.1, _Blend - cutout);
 
