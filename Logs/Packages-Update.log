@@ -1,0 +1,25 @@
+
+=== Sat Feb  4 13:26:37 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已添加:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.ide.rider@3.0.15
+  com.unity.ide.visualstudio@2.0.16
+  com.unity.ide.vscode@1.2.5
+  com.unity.modules.androidjni@1.0.0
+  com.unity.test-framework@1.1.31
+  com.unity.timeline@1.6.4
+  com.unity.ugui@1.0.0
+  com.unity.xr.legacyinputhelpers@2.1.9
+The following packages were 已更新:
+  com.unity.ads 从版本 2.3.1 到 3.7.5
+  com.unity.analytics 从版本 3.2.2 到 3.6.12
+  com.unity.collab-proxy 从版本 1.2.15 到 1.15.18
+  com.unity.purchasing 从版本 2.0.3 到 4.1.5
+  com.unity.textmeshpro 从版本 1.3.0 到 3.0.6
+The following packages were 已移除:
+  com.unity.package-manager-ui@2.0.3
