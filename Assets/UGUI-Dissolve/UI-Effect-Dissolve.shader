@@ -107,9 +107,7 @@
                 OUT.worldPosition = v.vertex;
                 OUT.vertex = UnityObjectToClipPos(OUT.worldPosition);
                 OUT.srcPos = ComputeScreenPos(OUT.vertex);
-
                 OUT.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
-
                 OUT.color = v.color * _Color;
                 return OUT;
             }
